@@ -1,0 +1,217 @@
+body {
+	background: rgba(24,22,18,1);
+	color: #efefef;
+	font-family: 'Roboto Mono', 'Roboto', monospace, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	min-height: 100vh;
+	padding: 0;
+	text-align: center;
+}
+body h1, h2, h3 , h4, h5, h6 {
+	font: "Roboto Mono", 'Roboto', monospace;
+	text-align: justify;
+}
+body p {
+	font: 1em "Roboto Mono", 'Roboto', monospace;
+	font-weight: 300;
+	margin: 0 auto;
+	max-width: 950px;
+	text-align: center;
+}
+body a {
+	color: #66dcef;
+	text-decoration: none;
+}
+body a:hover {
+	color: #21e935;
+	text-decoration: none;
+}
+body a:visited {
+	color: #66dcef;
+	text-decoration: none;
+}
+
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+header {
+	font-family: ‘Roboto Mono’, ‘Roboto’, monospace;
+	margin: 0 auto;
+	/* padding: 6px; */
+	text-align: center;
+}
+header img {
+	width: 42%;
+	max-width: 420px;
+	padding: 13px 16px;
+}
+@media only screen and (min-width: 200px) and (max-width: 1024px) {
+	header img {
+		width: 42%;
+		min-width: 242px;
+		max-width: 420px;
+	}
+}
+
+#menu {
+	font-size: 1.25em;
+	text-decoration: none;
+}
+#menu ul {
+	margin: 0 6px 12px 6px;
+	padding: 0;
+}
+#menu li {
+	display: inline-block;
+}
+
+hr.dash {
+	border: 0;
+	border-bottom: 1px dashed #66cdef;
+	height: 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 69%;
+}
+
+.title {
+	color: #7ef4de;
+	font-size: 1.42em;
+	font-weight: 500;
+	text-align: center;
+}
+
+.illustration {
+	color: #ffffff;
+	text-align: center;
+}
+.gallery {
+	line-height: 0;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	text-align: center;
+	position: static;
+	display: inline-block;
+	/* width: 100%;
+	margin: auto;
+	-webkit-column-gap: 6px;
+	-moz-column-gap: 6px;
+	column-gap: 6px; */
+}
+@media only screen and (min-width : 921px) and (max-width: 1024px) {
+	.gallery {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+}
+@media only screen and (min-width : 481px) and (max-width: 920px) {
+	.gallery {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+}
+@media only screen and (min-width : 200px) and (max-width: 480px) {
+	.gallery {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}
+.gallery img {
+	display: block;
+	padding: 5px;
+	width: 100%;
+	height: auto;
+	max-width: 240px;
+	text-align: center;
+	/* 	justify-content: center;
+	align-items: center;
+	position: inline-block;
+	transition: 0.4s;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin-bottom: 2px; */
+}
+.gallery img:hover {
+	/* filter: contrast(118%); */
+	/* filter: invert(95%); */
+	filter: brightness(1.13) hue-rotate(-24deg);
+}
+.gallery p {
+	color: #aaffaa;
+	font-family: 'Roboto Mono', monospace, courier;
+	font-size: 1.2em;
+	text-align: center;
+}
+.frame img {
+	box-shadow: 0 0 10px #000 inset;
+	-moz-box-shadow: 0 0 10px #000 inset;
+	-webkit-box-shadow: 0 0 10px #000 inset;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	display: inline;
+	margin: 0 3px;
+	padding: 10px;
+	width: 142px;
+}
+
+/* back to top button */
+.top {
+	position: sticky;
+
+	--offset: 50px; 
+	margin-top: calc(100vh + var(--offset));
+	margin-right: 10px;
+	bottom: 20px;
+	place-self: end;
+
+	/* visual styling */
+	color: #dfd;
+	text-decoration: none;
+	padding: 8px 15px;
+	font-family: monospace;
+	background: rgba(42,42,42,0.69);
+	border-radius: 100px;
+	white-space: nowrap;
+}
+.top a:hover {
+	color: #9bf;
+}
+.top a:visited {
+	color: #dfd;
+}
+
+footer {
+	bottom: 0;
+	font-size: 1.13em;
+	font-weight: 700;
+	margin: 0 auto;
+	/* margin: -6px -6px; */
+	padding: 13px 6px;
+	text-align: center;
+}
+footer a {
+	color: #aaeedd;
+}
+footer a:hover {
+	color: #ff6969;
+}
+.footerSocial img {
+	display: inline;
+	max-width: 24px;
+	margin: 6px;
+	padding: 6px;
+}
+.footerSocial img:hover {
+	filter: blur(.66px) invert(13%);
+}
