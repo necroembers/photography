@@ -42,7 +42,6 @@ body a:visited {
 header {
 	font-family: ‘Roboto Mono’, ‘Roboto’, monospace;
 	margin: 0 auto;
-	/* padding: 6px; */
 	text-align: center;
 }
 header img {
@@ -56,18 +55,6 @@ header img {
 		min-width: 242px;
 		max-width: 420px;
 	}
-}
-
-#menu {
-	font-size: 1.25em;
-	text-decoration: none;
-}
-#menu ul {
-	margin: 0 6px 12px 6px;
-	padding: 0;
-}
-#menu li {
-	display: inline-block;
 }
 
 hr.dash {
@@ -92,30 +79,25 @@ hr.dash {
 }
 .gallery {
 	line-height: 0;
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	column-count: 2;
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
 	text-align: center;
 	position: static;
 	display: inline-block;
-	/* width: 100%;
-	margin: auto;
-	-webkit-column-gap: 6px;
-	-moz-column-gap: 6px;
-	column-gap: 6px; */
 }
 @media only screen and (min-width : 921px) and (max-width: 1024px) {
 	.gallery {
-		-webkit-column-count: 2;
-		-moz-column-count: 2;
-		column-count: 2;
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
 	}
 }
 @media only screen and (min-width : 481px) and (max-width: 920px) {
 	.gallery {
-		-webkit-column-count: 2;
-		-moz-column-count: 2;
-		column-count: 2;
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
 	}
 }
 @media only screen and (min-width : 200px) and (max-width: 480px) {
@@ -142,8 +124,6 @@ hr.dash {
 	margin-bottom: 2px; */
 }
 .gallery img:hover {
-	/* filter: contrast(118%); */
-	/* filter: invert(95%); */
 	filter: brightness(1.13) hue-rotate(-24deg);
 }
 .gallery p {
@@ -163,32 +143,6 @@ hr.dash {
 	margin: 0 3px;
 	padding: 10px;
 	width: 142px;
-}
-
-/* back to top button */
-.top {
-	position: sticky;
-
-	--offset: 50px; 
-	margin-top: calc(100vh + var(--offset));
-	margin-right: 10px;
-	bottom: 20px;
-	place-self: end;
-
-	/* visual styling */
-	color: #dfd;
-	text-decoration: none;
-	padding: 8px 15px;
-	font-family: monospace;
-	background: rgba(42,42,42,0.69);
-	border-radius: 100px;
-	white-space: nowrap;
-}
-.top a:hover {
-	color: #9bf;
-}
-.top a:visited {
-	color: #dfd;
 }
 
 footer {
