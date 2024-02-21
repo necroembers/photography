@@ -163,9 +163,9 @@ footer a:hover {
 .footerSocial img {
 	display: inline;
 	max-width: 24px;
-	margin: 6px;
-	padding: 6px;
+	margin: 3px;
+	padding: 6px 3px;
 }
 .footerSocial img:hover {
-	filter: blur(.66px) invert(13%);
+	filter: blur(.69px) invert(13%);
 }
