@@ -20,16 +20,13 @@ body p {
 	text-align: center;
 }
 body a {
-	color: #ef66ef;
-	text-decoration: none;
+	color: #abdcef;
 }
 body a:hover {
 	color: #21e935;
-	text-decoration: underline;
 }
 body a:visited {
-	color: #ef66ef;
-	text-decoration: none;
+	color: #66dcef;
 }
 
 /* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
@@ -42,6 +39,7 @@ body a:visited {
 header {
 	font-family: ‘Roboto Mono’, ‘Roboto’, monospace;
 	margin: 0 auto;
+	/* padding: 6px; */
 	text-align: center;
 }
 header img {
@@ -63,31 +61,25 @@ hr.dash {
 	height: 0;
 	margin: 0 auto;
 	text-align: center;
-	width: 69%;
+	width: 98%;
 }
 
 .title {
-	color: #66ddff;
+	color: #7ef4de;
 	font-size: 1.42em;
 	font-weight: 500;
 	text-align: center;
 }
-.title a:hover {
-	color: #ededff;
-}
 
-.illustration {
-	color: #ffffff;
-	text-align: center;
-}
 .gallery {
+	display: inline-block;
 	line-height: 0;
 	-webkit-column-count: 1;
 	-moz-column-count: 1;
 	column-count: 1;
+	margin: 0 auto;
+	padding: 13px 6px;
 	text-align: center;
-	position: static;
-	display: inline-block;
 }
 @media only screen and (min-width : 921px) and (max-width: 1024px) {
 	.gallery {
@@ -112,22 +104,15 @@ hr.dash {
 }
 .gallery img {
 	display: block;
-	padding: 5px;
-	width: 100%;
+	padding: 6px;
+	width: 98%;
 	height: auto;
-	max-width: 240px;
+	max-width: 1600px;
 	text-align: center;
-	/* 	justify-content: center;
-	align-items: center;
-	position: inline-block;
-	transition: 0.4s;
-	border-radius: 8px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	margin-bottom: 2px; */
 }
 .gallery img:hover {
-	filter: brightness(1.13) hue-rotate(-24deg);
+	filter: brightness(1.13) hue-rotate(24deg);
+	/* filter: contrast(113%) invert(92%); */
 }
 .gallery p {
 	color: #aaffaa;
@@ -135,17 +120,12 @@ hr.dash {
 	font-size: 1.2em;
 	text-align: center;
 }
-.frame img {
-	box-shadow: 0 0 10px #000 inset;
-	-moz-box-shadow: 0 0 10px #000 inset;
-	-webkit-box-shadow: 0 0 10px #000 inset;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	display: inline;
-	margin: 0 3px;
-	padding: 10px;
-	width: 142px;
+
+.shop img {
+	max-width: 36px;
+}
+.shop img:hover {
+	filter: blur(.69px) invert(13%);
 }
 
 footer {
